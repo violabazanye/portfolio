@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+/* global styles */
+body {
+    background-color: lightgrey;
+    font-family: 'Opens Sans 300', Open Sans, sans-serif;
+}
+.container {
+    margin: 40px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.large-text {
+    font-size: 3em;
+    padding-top: 0.5;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+.light-text {
+    font-weight: lighter;
+}
+a {
+    color: darkolivegreen;
+}
+footer {
+    font-weight: lighter;
+    font-size: 12px;
+    text-align: center;
+}
