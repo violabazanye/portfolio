@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { PrototypesComponent } from './prototypes/prototypes.component';
 import { AboutComponent } from './about/about.component';
+import { CaseStudiesComponent } from './case-studies/case-studies.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     PrototypesComponent,
-    AboutComponent
+    AboutComponent,
+    CaseStudiesComponent
   ],
   imports: [
     BrowserModule,
