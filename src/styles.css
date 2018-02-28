@@ -19,6 +19,7 @@ body {
 }
 a {
     color: darkolivegreen;
+    text-decoration: none;
 }
 footer {
     font-weight: lighter;
