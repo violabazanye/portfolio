@@ -24,8 +24,8 @@ li a:hover {
 }
 .dropdown {
     display: none;
-    margin: 60px;
     padding-top: 60px;
+    margin-left: 60px;
 }
 .dropdown-content {
     display: none;
@@ -46,5 +46,11 @@ li a:hover {
     }
     .dropdown {
         display: block;
+    }
+}
+@media only screen and (max-width: 414px){
+    .dropdown {
+        padding-top: 30px;
+        margin-left: 30px;
     }
 }
