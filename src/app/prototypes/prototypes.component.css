@@ -6,15 +6,24 @@
     margin-right: 60px;
     padding-top: 120px;
 }
+#intro img{
+    width: 100%;
+    height: auto;
+}
+#greeting{
+    animation: flash 3s ease-in-out -2s 3 alternate none;
+}
 #details{
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
     background-color: #026C7C;
     color: white;
+    padding: 60px;
 }
 #details img{
     max-width: 650px;
+    height: auto;
 }
 #search{
     text-align: center;
@@ -23,6 +32,8 @@
 }
 #search img{
     max-width: 850px;
+    height: auto;
+    width: 100%;
 }
 #end{
     display: grid;
@@ -33,4 +44,89 @@
 }
 #end img{
     max-width: 350px;
+    height: auto;
+    width: 100%;
+}
+
+/* ANIMATIONS */
+
+@-webkit-keyframes flash{
+    from {color: black;}
+    to {color: #026C7C;}
+}
+@keyframes flash{
+    from {color: black;}
+    to {color: #026C7C;}
+}
+
+/* RESPONSIVE CSS */
+
+@media only screen and (max-width: 1240px){
+    #details{
+        display: block;
+        text-align: center;
+        padding: 40px;
+    }
+    #details img{
+        max-width: 550px;
+        width: 100%;
+        padding-top: 20px;
+    }
+}
+@media only screen and (max-width: 900px){
+    #intro{
+        display: table;
+        text-align: center;
+        padding-top: 80px;
+    }
+    #intro img{
+        display: table-footer-group;
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 50px;
+    }
+    #intro div{
+        display: table-header-group;
+    }
+    #details img{
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media only screen and (max-width: 890px){
+    #end{
+        display: block;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    #end img{
+        max-width: 250px;
+    }
+}
+@media only screen and (max-width: 600px){
+    #intro{
+        padding-top: 30px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+@media only screen and (max-width: 414px){
+    #intro{
+        padding-top: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #intro img{
+        padding-top: 20px;
+    }
+    #details{
+        padding: 20px;
+    }
+    #search{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }

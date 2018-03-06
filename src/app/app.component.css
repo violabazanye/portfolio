@@ -48,6 +48,8 @@ li a:hover {
     text-decoration: underline;
 }
 
+/* RESPONSIVE CSS */
+
 @media only screen and (max-width: 600px){
     ul {
         display: none;
