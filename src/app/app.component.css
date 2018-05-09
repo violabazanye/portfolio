@@ -9,7 +9,8 @@ ul{
 }
 li{
     float: left;
-    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    font-style: bold;
     letter-spacing: 3px;
 }
 li a {

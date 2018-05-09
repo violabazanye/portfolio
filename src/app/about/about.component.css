@@ -20,6 +20,7 @@
     border-style: inset;
 }
 #menu-grid {
+    padding-top: 20px;
     display: grid;
     grid-gap: 10px;
     grid-template-columns: auto auto;
