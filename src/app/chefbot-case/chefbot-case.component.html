@@ -1,0 +1,189 @@
+<div id="content">
+  <div id="intro">
+      <p class="large-text">Chef Bot</p>
+      <p>Transforming the ordinary recipe app into a more engaging and intellectual application 
+        that uses artificial intelligence, and provides quick results tailored to your needs. <a routerLink="/prototypes">Check out the prototype.</a></p>
+  </div>
+
+      <div class="description" id="problem">
+        <p class="title">The Problem</p>
+        <p>Given my love for creativity and also being a foodie, I like to bring a spontaneous element to every 
+          dish I prepare, and because of that, I found myself downloading several recipe apps on my phone to get 
+          as many ideas as I could. This would also be paired with some searching on Google as well. So you can imagine
+        the level of cognitive overload I was faced with. But that's just me.<br> Eventually I decided to cut down on my
+      hoarding of recipe apps and just pick one that was best. This didn't work out so well because almost every recipe app
+    I have used is individually rich with information. When it is almost dinner time you would find me scrolling through tonnes
+      of options that never come to an end, and after all of that, I would still have no idea on what to have for dinner.<br><br>
+        Hence, a problem emerged: how can I redesign a recipe app into one that will not make users think, but will help them 
+        decide quickly and easily on what they can cook with the ingredients they have.</p>
+      </div>
+      <hr>
+      <div class="description" id="users">
+        <p class="title">Users & Audience</p>
+        <div><p>The target users of Chef Bot are smartphone users with the ability and time to cook their own meals at home, also looking for 
+          new tasty and healthy recipes.<br>
+          They are amateur chefs and need help deciding what to cook with the current ingredients they have, they want suggestions fast (since in some cases they may 
+          be super hungry) and tailored to their dietary preferences.<br><br>
+          Currently, they are completing these tasks with the help of:</p> 
+          <ul>
+            <li>Google Search</li>
+            <li>Browsing through various existing recipe apps</li>
+            <li>Consulting friends</li>
+            <li>Some dare to experiment on their own (a.k.a. the lone ranger)</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="description" id="team">
+        <p class="title">Team & Role</p>
+        <p>This being my first solo project, I had a core team of one - just me. Having had experience designing and developing
+          mobile applications for startups, I got along pretty well.<br><br>
+          I did all the work myself; conversation design, user task flows, interaction design, visual design, prototyping and 
+          development. I also conducted user research methods such as interviews and 'Wizard of Oz' experiments in order to assess
+          both user behavior and attitudes.
+        </p>
+      </div>
+      <hr>
+      <div class="description" id="design">
+        <p class="title">Design Process</p>
+        <p>Since I was doing this project on my own, I decided to do things a little differently. First, I thought, with the current
+          trend in technology, what are the current solutions available that can help enhance usabilty and reduce cognitive load ? That
+          was when I landed on artificial intelligence (AI), which led me to conversational UIs.<br> Having a conversational UI gives the 
+          advantage of interacting with the application on human terms unlike just clicking on icons. This way the user has complete control
+          on what the application can do. The intelligence doesn't come from words being recognized but from natural-language understanding
+          of intentions behind those words.<br> So then I sketched what the MVP (minimum viable product) interface would look like. 
+        </p>
+      </div>
+      <img style="width: 80%;margin-left: auto;margin-right: auto;margin-bottom: 20px;" src="/assets/chefbot-sketch.png" alt="Information architecture">
+      <div style="margin-bottom: 30px;">
+          <p>The promises of AI powered interfaces are great but so are the challenges, for example with conversational UIs the main problems
+              include:</p>
+            <ul>
+              <li>understanding the intent of the user</li>
+              <li>understanding the context</li>
+            </ul>
+            <p>With AI we must design for context and intent. The design requirements are very different and the main challenge for the interaction design
+              of this application was to figure out what information is relevant in a given context and ignore the rest. My hope is that with AI, the app 
+              will eventually learn and make these kinds of judgements on its own.</p>
+      </div>
+      <hr>
+      <div class="description" id="convo-design">
+          <p class="title">Conversation Design</p>
+          <div>
+              <p>
+                  That said, I found Google's guidelines on conversational design to be extremely helpful in building a meaningful conversation. With this, I 
+                  started by understanding, from interviews, who are my users.<br> First, what are some of the common words and phrases used;
+                </p>
+                <ul style="font-style: italic;">
+                  <li>I have chicken in the fridge, what can I cook with it?</li>
+                  <li>I'm hungry but what can I eat?</li>
+                  <li>How do they cook lasagna?</li>
+                  <li>Beef recipes</li>
+                </ul>
+                <p>Also, what are some of the common triggers for users to start thinking about these phrases;</p>
+                <ul>
+                  <li>hunger</li>
+                  <li>cravings</li>
+                  <li>if I have something in the fridge about to expire and I want to use it</li>
+                  <li>cooking for others/guests</li>
+                  <li>when it's time for the next meal</li>
+                </ul>
+          </div>
+          <p style="font-weight: bolder;">Personas:</p>
+          <div>
+              <p style="text-decoration: underline;">System Persona</p>(Chef Bot) - the conversational partner created to
+              interact with the users. Helps maintain a certain tone when writing dialog.
+              <ol>
+                <li>Adjectives: foodie, friendly, professional, helpful, knowledgeable</li>
+                <li>Character: A creative cook that loves to experiment in the kitchen and try out new recipes that 
+                  are both healthy and tasty. A professional, but not afraid to bend the rules a little. Doesn’t 
+                  like to dilly dally, but what he lacks in small talk he more than makes up for it with a bit of 
+                  humour. Worked with a lot of master chefs across the globe. Attempted to start own restaurant 
+                  but preferred the direct contact with customers via chat. Enjoys spending free time watching the 
+                  food network.</li>
+              </ol>
+              <p style="text-decoration: underline;">User Persona</p>
+              <p>Anna, is a 27 year old entrepreneur who lives in a small city. As her income is unstable she shares 
+                an apartment with a roommate who never cooks and has a very demanding job. Anna’s second passion, 
+                aside from her business, is cooking and sometimes cooks for her family and friends on weekends and at 
+                parties. The Food Network is one of her favourite channels on TV, and she also has a taste for the 
+                finer things in life.</p>
+              <ol>
+                <li>Goals: because Anna is such a good friend, she always tries to cook for her roommate when they 
+                  come home late from work. She has more time to do this because she is her own boss. But since her 
+                  family has several diabetics and hypertension patients, she wants to cook only healthy meals because 
+                  she would like to live for a very long time. She is always aware of what her body needs to stay 
+                  healthy. And when her friends come over she would like to cook for them new and exciting meals.
+                She is one of the lone rangers who like to experiment in the kitchen.</li>
+                <li>Context: Anna is in the cab ride home thinking of what to cook tonight given what she already 
+                  has in the fridge.</li>
+              </ol>
+          </div>
+          <p style="font-weight: bolder;"> Crtitical User Journey:</p>
+          <div>
+              <p>Anna has been craving for some chicken all day and can’t afford to go to a restaurant for a fancy gourmet 
+                  dinner. Since she has the skills and time, she decides to cook for herself something tasty. She gets 
+                  suggestions on chicken recipes. Also, since she is health conscious, she only wants low-carb recipes. She 
+                  gets recipe suggestions with low-carbs. She identifies the ingredients she already has at home and adds 
+                  the remainders to her shopping list. She saves the recipe and heads to the supermarket near her apartment 
+                  and buys the remaining ingredients.<br>
+                  When she is finally in her kitchen, she opens the saved recipe and begins to cook. Bon appetite! </p>
+              <p style="font-weight: bolder;">Sample Dialog</p>
+              <p>Note: Chef Bot relies on Edamam API to provide recipes.</p>
+              <img style="width: 70%;" src="/assets/sample-dialog.png" alt="sample dialog">
+          </div>
+      </div>
+      <div style="margin-bottom: 40px;">
+        <p style="font-weight: bolder;">A diagram of the conversation flow</p>
+        <p>This provides the structure of the conversational interface.</p>
+        <img style="width: 80%;margin-left: auto;margin-right: auto;display: block;" src="/assets/Chefbot-flow-diagram.png" alt="Conversation high level flow diagram">
+      </div>
+      <hr>
+      <div class="description" id="UI-design">
+        <p class="title">User Interface Design</p>
+        <p>The objective of the interface was to be simple, fresh, ingenious, and in tune with the system persona mentioned above. This was accomplished 
+          by implementing a clean interface, with simple shapes and a few innovative details.
+        </p>
+      </div>
+      <div class="image-grid">
+        <div>
+          <img src="/assets/chef-bot/screen 1.png" alt="Home Screen">
+          <p>Users are welcomed by Chef Bot with a chat interface. The welcome message explains what Chef Bot can do for you right a way. All other features
+            are hidden so you can focus on the main task which is to get recipe suggestions.
+          </p>
+        </div>
+        <div>
+          <img src="/assets/chef-bot/screen 2.png" alt="Ingredients Screen">
+          <p>When a recipe is selected from the chat interface, the recipe card is expanded to reveal more details like ingredients and a link to instructions.
+            The card expands from within the chat interface so that you can easily move on to other recipe suggestions without having to move back and forth 
+            between screens.
+          </p>
+        </div>
+        <div>
+          <img src="/assets/chef-bot/screen 3.png" alt="Shopping list Screen">
+          <p>The shopping list saves ingredients that you may be interested in purchasing later and can be accessed from the side navigation drawer, revealed by 
+            swiping to the right on the device. They are categorized according to the recipe they were selected from. When you done with a recipe, you can
+            delete all of its ingredients easily by just swiping to the left.</p>
+        </div>
+        <div>
+          <img src="/assets/chef-bot/screen 4.png" alt="Search Screen">
+          <p>For users who want to search for recipes on their own without the help of Chef Bot, you can access search on the home screen in the top right corner.
+            The results can also be filtered according to your needs.
+          </p>
+        </div>
+        <div>
+          <img src="/assets/chef-bot/screen 5.png" alt="Favorites Screen">
+          <p>Recipes you would like to re-visit can easily be accessed from 'Favorites' - a menu item also accessed from the side navigation drawer. Recipes can be 
+            saved when you are looking a detailed recipe card from the options menu.</p>
+        </div>
+        <div>
+          <img src="/assets/chef-bot/screen 6.png" alt="Settings Screen">
+          <p>For the health conscious user, you can set your preferred diet in settings, which is also accessed from the side navigation drawer. It contains all the 
+            most common diet preferences. Other less common preferences can be used for filtering while chatting with Chef Bot.</p>
+        </div>
+      </div>
+      <hr>
+      <div style="margin-top: 30px;">
+          <p style="font-weight: bolder">** Project is ongoing, interaction design and results coming soon.</p>
+      </div>
+</div>

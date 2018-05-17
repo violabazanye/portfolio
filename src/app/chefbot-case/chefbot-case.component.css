@@ -1,0 +1,57 @@
+#content{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin: 60px; 
+}
+#intro{
+    margin-top: 50px;
+}
+.description{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-gap: 10px;
+}
+.title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+}
+hr{
+    width: 40%;
+}
+.image-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 30px;
+}
+.image-grid div{
+    text-align: center;
+}
+.image-grid div img{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.image-grid div p{
+    font-size: small;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* RESPONSIVE CSS */
+@media only screen and (max-width: 600px){
+    #intro{
+        margin-top: 0;
+    }
+    .description{
+        display: block;
+    }
+    .image-grid div p{
+        display: none;
+    }
+}

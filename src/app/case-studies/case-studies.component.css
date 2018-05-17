@@ -4,3 +4,82 @@
     justify-content: center;
     align-content: center;
 }
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0px;
+}
+.grid-item{
+    margin: 5px;  
+    max-width: 350px;
+    max-height: 350px;
+    background: transparent;
+    position: relative;
+}
+.grid-item img{
+    max-width: 350px;
+    max-height: 350px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.grid-item:hover{
+    box-shadow: 0px 13px 21px -5px rgba(0, 0, 0, 0.3);
+    -webkit-transition: 500ms ease-out;
+    -moz-transition: 500ms ease-out;
+    -o-transition: 500ms ease-out;
+    transition: 500ms ease-out;
+}
+button {
+    color:black;
+    background:transparent;
+    border-width:2px;
+    border-style: solid;
+    border-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    opacity: 0; 
+    padding:0.5em 1em;
+    transition:all 0.3s ease-in-out;
+    text-align:center;
+    font-size: 1em;
+}
+button:before, button:after {
+    content:'';
+    position:absolute;
+    border-color:black;
+    box-sizing:border-box;
+    border-style:solid;
+    width:1em;
+    height:1em;
+    transition:all 0.3s ease-in-out
+}
+button:before {
+    top:-6px;
+    left:-6px;
+    border-width:2px 0 0 2px;
+    z-index:5;
+}
+button:after {
+    bottom:-6px;
+    right:-6px;
+    border-width:0 2px 2px 0;
+}
+button:hover:before, button:hover:after {
+    width:calc(100% + 12px);
+    height:calc(100% + 12px);
+    border-color:black;
+}
+button:hover {
+    color:#fff;
+    background: black;;
+    border-color: black;
+}
+.grid-item:hover img{
+    opacity: 0.1;
+}
+.grid-item:hover button{
+    opacity: 1;
+}
