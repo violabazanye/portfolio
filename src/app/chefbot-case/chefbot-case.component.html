@@ -183,7 +183,38 @@
         </div>
       </div>
       <hr>
+      <div class="description" id="interaction-design">
+        <p class="title">Interaction Design</p>
+        <p>The interaction model was mainly inspired by <span style="font-weight: bold">Material Design</span>, and because two of Chef Bot's personality traits are friendly and professional, I chose to
+          to add a few subtle but fun animations to enhance the experience.<br>
+          Now remember one of the goals of this project is to demonstrate my design and development skills, so I did things a bit differently. In order to test the
+          interaction styles, I actually built the app myself using <span style="font-weight: bold">React Native</span> instead of high fidelity prototypes. I wanted to see if my ideas were both feasible 
+          with the actual data and on the given platform. My first platform to test on was <span style="font-weight: bold">Android</span>.
+        </p>
+      </div>
+      <div>
+        <img style="width: 25%;margin-left: auto;margin-right: auto;display: block;" src="/assets/chef-bot/Side-Drawer.png" alt="Navigation drawer" /> 
+        <p>The navigation between the four main screens (home, favorites, shopping list & settings) uses a side navigation drawer which can be accessed by
+          swiping right on the device. Similar to that seen in the Gmail android app.<br>
+          <span style="font-weight: bold">PS.</span> Jury is still out on whether or not to add sign in and user profile, for now they are not necessary.
+        </p>
+        <div class="description">
+          <video width="400" controls>
+            <source src="/assets/chef-bot/chefbot - interaction1.mp4" type="video/mp4">
+          </video>
+          <p>On the home/chat interface, the goal was to minimize content given to the user and limit interactions that involve moving to another screen so that the
+            user does not lose track of where they are in the app.<br> For example, when recipes are requested only three cards are displayed from an array of thousands 
+            of options. So instead of endless scrolling, if you need more options you can just type 'more' and the bot will display more options. The cards slide in 
+            to indicate that you can scroll down for more options if some of them are hidden from view.<br>
+            To view more details about a recipe, you don't have to leave the current screen. The card will flip 'onTap' and expand to show more details. Tap 'X' to close
+            the card and it will flip and shrink back to it's original position, so you can quickly go back to deciding what to cook.<br>
+            Also, originally I had added an options menu to the card but to avoid congestion on the screen I chose to just add the 'favorite' icon only so you can just 
+            tap it to add to favorites.
+          </p>
+        </div>
+      </div>
+      <hr>
       <div style="margin-top: 30px;">
-          <p style="font-weight: bolder">** Project is ongoing, interaction design and results coming soon.</p>
+          <p style="font-weight: bolder">** Project is ongoing, more interaction design and results coming soon.</p>
       </div>
 </div>

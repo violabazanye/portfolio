@@ -42,6 +42,10 @@ hr{
     padding-left: 20px;
     padding-right: 20px;
 }
+video {
+    width: 70%;
+    height: auto;
+}
 
 /* RESPONSIVE CSS */
 @media only screen and (max-width: 600px){
