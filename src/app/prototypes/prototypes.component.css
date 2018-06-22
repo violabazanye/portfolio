@@ -4,20 +4,14 @@
     align-items: center;
     margin-left: 60px;
     margin-right: 60px;
-    padding-top: 120px;
+    padding-top: 100px;
 }
 #intro img{
     width: 100%;
     height: auto;
 }
 #greeting{
-    background: linear-gradient(to left, #026C7C 40%, black 60%);
-    background-size: 200% auto;
-    color: black;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: flash 2s linear;
+    color: #026C7C;
 }
 #details{
     display: grid;
@@ -90,7 +84,7 @@
     #intro{
         display: table;
         text-align: center;
-        padding-top: 80px;
+        padding-top: 60px;
     }
     #intro img{
         display: table-footer-group;
@@ -130,14 +124,14 @@
 }
 @media only screen and (max-width: 600px){
     #intro{
-        padding-top: 30px;
+        padding-top: 40px;
         margin-left: 50px;
         margin-right: 50px;
     }
 }
 @media only screen and (max-width: 414px){
     #intro{
-        padding-top: 0;
+        padding-top: 20px;
         margin-left: 30px;
         margin-right: 30px;
     }

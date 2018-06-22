@@ -5,7 +5,7 @@
     margin: 60px; 
 }
 #intro{
-    margin-top: 50px;
+    margin-top: 20px;
 }
 .description{
     margin-top: 30px;
@@ -47,7 +47,7 @@ hr{
     margin-right: auto;
 }
 .image-grid div p{
-    font-size: small;
+    font-size: 1vw;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -66,11 +66,7 @@ video {
     }
 }
 @media only screen and (max-width: 920px){
-    #storyboard{
-        display: block;
-    }
     #storyboard img{
-        width: 60%;
         margin-left: auto;
         margin-right: auto;
         display: block;

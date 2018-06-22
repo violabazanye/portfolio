@@ -1,11 +1,20 @@
 #navbar{
     position: relative;
+    z-index: 100;
+}
+#mini-menu {
+    display: grid; 
+    grid-template-columns: 150px auto;
+    align-items: center;
+}
+#mini-menu h1 {
+    display: none;
+    padding-top: 60px;
 }
 ul{
     list-style-type: none;
     overflow: hidden;
     position: absolute;
-    z-index: 10;
 }
 li{
     float: left;
@@ -58,10 +67,22 @@ li a:hover {
     .dropdown {
         display: block;
     }
+    .dropdown img {
+        width: 12px;
+    }
+    #mini-menu h1 {
+        display: block;
+    }
 }
-@media only screen and (max-width: 414px){
+@media only screen and (max-width: 430px){
+    #mini-menu {
+        grid-template-columns: 100px auto;
+    }
     .dropdown {
         padding-top: 30px;
         margin-left: 30px;
+    }
+    #mini-menu h1 {
+        padding-top: 30px;
     }
 }

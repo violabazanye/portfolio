@@ -6,6 +6,8 @@
 body {
     background-color: lightgrey;
     font-family: 'Open Sans', sans-serif;
+    font-size: 1.2vw;
+    line-height: 2vw;
 }
 .container {
     margin: 40px;
@@ -15,6 +17,7 @@ body {
 .large-text {
     font-family: 'Montserrat', sans-serif;
     font-size: 3em;
+    line-height: 4vw;
     padding-top: 0.5;
     font-weight: 900;
     letter-spacing: 3px;
@@ -28,7 +31,7 @@ a {
 }
 footer {
     font-weight: 200;
-    font-size: 12px;
+    font-size: .8vw;
     text-align: center;
 }
 
@@ -89,9 +92,6 @@ footer {
 /* RESPONSIVE CSS */
 
 @media only screen and (max-width: 414px){
-    .large-text {
-        font-size: 2em;
-    }
     .container {
         margin: 20px
     }
