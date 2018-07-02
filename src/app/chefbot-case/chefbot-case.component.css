@@ -73,7 +73,7 @@ video {
     }
 }
 @media only screen and (max-width: 600px){
-    #intro{
+    #content{
         margin-top: 0;
     }
     .description{
@@ -81,5 +81,12 @@ video {
     }
     .image-grid div p{
         display: none;
+    }
+}
+@media only screen and (max-width: 430px){
+    #content {
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 0;
     }
 }

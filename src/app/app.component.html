@@ -1,19 +1,30 @@
-<div id="navbar">
-  <ul>
-    <li><a routerLink="/about">ABOUT</a></li>
-    <li><a routerLink="/case-studies">CASE STUDIES</a></li>
-    <li><a routerLink="/prototypes">PROTOTYPES</a></li>
+<nav role="navigation" id="navbar">
+  <ul id="main-menu">
+    <li id="about"><a routerLink="/about">ABOUT</a></li>
+    <li id="case-studies">
+      <a routerLink="/case-studies">CASE STUDIES</a>
+      <ul id="case-menu">
+          <li><a style="padding: 14px 0;" routerLink='/chefbot-case'>Chef Bot</a></li>
+      </ul>
+    </li>
+    <li id="prototypes"><a routerLink="/prototypes">PROTOTYPES</a></li>
   </ul>
   <div id="mini-menu">
     <div class="dropdown">
-      <img style="width: 32px;" src="assets/menu.png"/>
-      <div class="dropdown-content">
-        <a href="/about">ABOUT</a>
-        <a href="/case-studies">CASE STUDIES</a>
-        <a href="/prototypes">PROTOTYPES</a>
-      </div>
+      <!-- a fake hidden checkbox is used as click receiver, so we can use the :checked selector on it-->
+      <input type="checkbox" />
+      <!-- hamburger -->
+      <span></span>
+      <span></span>
+      <span></span>
+      <ul class="dropdown-content">
+        <a href="/about"><li>ABOUT</li></a>
+        <a href="/case-studies"><li>CASE STUDIES</li></a>
+        <a href="/chefbot-case"><li style="padding-left: 15px">Chef Bot</li></a>
+        <a href="/prototypes"><li>PROTOTYPES</li></a>
+      </ul>
     </div>
     <h1 class="large-text" style="line-height: 6vw">viola bazanye<br>portfolio</h1>
   </div>
-</div>
+</nav>
 <router-outlet></router-outlet>

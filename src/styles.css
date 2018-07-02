@@ -26,8 +26,12 @@ body {
     font-weight: lighter;
 }
 a {
-    color: darkolivegreen;
+    color: olive;
     text-decoration: none;
+    transition: color 0.3s ease;
+}
+a:hover {
+    color: darkolivegreen;
 }
 footer {
     font-weight: 200;
