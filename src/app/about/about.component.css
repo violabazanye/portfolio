@@ -49,6 +49,21 @@
     width: 56px;
     height: 56px;
 }
+button {
+    border-radius: 0.12em;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid olive;
+    margin: 0 0.3em 0.3em 0; 
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.2s;
+    font-weight: 300;
+    color: olive; 
+}
+button:hover {
+    color: white;
+    background-color: olive;
+}
 
 /* RESPONSIVE CSS */
 
