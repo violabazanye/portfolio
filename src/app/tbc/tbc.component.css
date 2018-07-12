@@ -1,0 +1,86 @@
+#content{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+#intro{
+    background-color: #3FA7D6;
+    color: white;
+    padding: 100px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+#welcome-img{
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-top: 100px; 
+    margin-bottom: 50px;
+}
+h2{
+    letter-spacing: 3px;
+    font-family: 'Montserrat', sans-serif;
+}
+#interviews{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 50px;
+}
+a{
+    color: white;
+    text-decoration: underline; 
+}
+#design{
+    padding: 100px;
+}
+#sketches{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 10px;
+    margin: 40px;
+}
+#hi-def{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: auto auto;
+    grid-column-gap: 30px;
+    margin-top: 40px;
+}
+#hi-def img{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* RESPONSIVE CSS */
+
+@media only screen and (max-width: 600px){
+    #welcome-img{
+        margin-top: 50px;
+    }
+    #intro{
+        padding: 50px;
+    }
+    #design{
+        padding: 50px;
+    }
+    #sketches{
+        margin: 10px;
+    }
+}
+@media only screen and (max-width: 414px){
+    #interviews{
+        display: block;
+    }
+    #hf-title{
+        margin-top: 40px;
+    }
+    #hi-def{
+        display: block;
+    }
+    #hi-def div{
+        margin-bottom: 40px;
+        margin-top: 30px;
+    }
+}

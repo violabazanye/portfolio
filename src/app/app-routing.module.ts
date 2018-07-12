@@ -5,13 +5,15 @@ import { AboutComponent } from './about/about.component';
 import { PrototypesComponent } from './prototypes/prototypes.component';
 import { CaseStudiesComponent } from './case-studies/case-studies.component';
 import { ChefbotCaseComponent } from './chefbot-case/chefbot-case.component';
+import { TbcComponent } from './tbc/tbc.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/about', pathMatch: 'full' },
   { path: 'about', component: AboutComponent },
   { path: 'prototypes', component: PrototypesComponent },
   { path: 'case-studies', component: CaseStudiesComponent },
-  { path: 'chefbot-case', component: ChefbotCaseComponent }
+  { path: 'chefbot-case', component: ChefbotCaseComponent },
+  { path: 'the-broker-connection', component: TbcComponent }  
 ];
 
 @NgModule({
