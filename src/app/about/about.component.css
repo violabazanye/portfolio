@@ -52,8 +52,15 @@
 button {
     border-radius: 0.12em;
     padding: 0.35em 1.2em;
-    border: 0.1em solid olive;
-    margin: 0 0.3em 0.3em 0; 
+    /*border: 0.1em solid olive;
+    margin: 0 0.3em 0.3em 0;*/
+    border-width: 0.1em;
+    border-style: solid;
+    border-color: olive;
+    margin-top: 0;
+    margin-right: 0.3em;
+    margin-bottom: 0.3em;
+    margin-left: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     transition: all 0.2s;
