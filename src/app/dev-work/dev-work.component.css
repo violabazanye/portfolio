@@ -62,3 +62,8 @@
         grid-template-columns: auto;
     }
 }
+@media only screen and (max-width: 600px){
+    #work-grid {
+        padding-top: 0;
+    }
+}
