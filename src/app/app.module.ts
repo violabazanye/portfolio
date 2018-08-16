@@ -9,6 +9,7 @@ import { AboutComponent } from './about/about.component';
 import { CaseStudiesComponent } from './case-studies/case-studies.component';
 import { ChefbotCaseComponent } from './chefbot-case/chefbot-case.component';
 import { TbcComponent } from './tbc/tbc.component';
+import { DevWorkComponent } from './dev-work/dev-work.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { TbcComponent } from './tbc/tbc.component';
     AboutComponent,
     CaseStudiesComponent,
     ChefbotCaseComponent,
-    TbcComponent
+    TbcComponent,
+    DevWorkComponent
   ],
   imports: [
     BrowserModule,
