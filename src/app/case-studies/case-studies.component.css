@@ -86,6 +86,11 @@ button:hover {
 
 /* RESPONSIVE CSS */
 
+@media only screen and (max-width: 840px){
+    .grid-container{
+        grid-template-columns: auto;
+    }
+}
 @media only screen and (max-width: 414px){
     .grid-item{
         max-width: 250px;
@@ -94,8 +99,5 @@ button:hover {
     .grid-item img{
         max-width: 250px;
         max-height: 250px;
-    }
-    .grid-container{
-        grid-template-columns: auto;
     }
 }
