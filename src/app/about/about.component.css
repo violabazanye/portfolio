@@ -71,6 +71,10 @@ button:hover {
     color: white;
     background-color: olive;
 }
+button:disabled {
+    background-color: #dddddd;
+    color: gray;
+}
 
 /* RESPONSIVE CSS */
 
